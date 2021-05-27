@@ -1,0 +1,21 @@
+.Shop {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 100vh;
+}
+
+.Shop > div {
+  flex: 1;
+}
+
+.Left {
+  text-align: center;
+}
+
+.Right {
+  min-width: 350px;
+  background: #f3f3f3;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}

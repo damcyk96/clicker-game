@@ -11,7 +11,7 @@ describe("Shop", () => {
 describe("Shop using", () => {
   test("renders list of machines text", () => {
     render(<Shop />);
-    const machines = screen.getByText("List of Machines");
+    const machines = screen.getByText("List of problems");
     expect(machines).toBeInTheDocument();
   });
 

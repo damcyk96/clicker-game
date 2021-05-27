@@ -13,17 +13,19 @@ const MachinesList = ({ machines, purchased, currency }: MachinesListProps) => (
     <h1>List of problems</h1>
 
     {machines.map((machines, index) => (
-      <Machine
-        key={index}
-        name={machines.name}
-        type={machines.type}
-        cost={machines.cost}
-        currency={currency}
-        count={machines.count}
-        increase={machines.increase}
-        disabled={machines.disabled}
-        clicked={() => purchased(index)}
-      />
+      <div data-testid={machines.name}>
+        <Machine
+          key={index}
+          name={machines.name}
+          type={machines.type}
+          cost={machines.cost}
+          currency={currency}
+          count={machines.count}
+          increase={machines.increase}
+          disabled={machines.disabled}
+          clicked={() => purchased(index)}
+        />
+      </div>
     ))}
   </>
 );

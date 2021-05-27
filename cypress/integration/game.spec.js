@@ -28,7 +28,7 @@ context("Testy gry", () => {
   });
   describe("buy machine (more stress)", () => {
     it("should buy machine - more stress", () => {
-      cy.get(".Machine_Available__2A2kt").click();
+      cy.get('[data-testid="More stress"]').click();
     });
     it("should be 2 level, 0 bug, 1 bug per click, 10 total amount", () => {
       cy.get("[data-testid=amount] > span").should("contain", "0 bug");
